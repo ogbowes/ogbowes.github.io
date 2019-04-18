@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<title>Tech Gurus</title>
+</head>
+<body>
+<!--Created and designed by Aaron Bowes, Version 1.0, April 2019-->
+	<header>
+	<h1 class="logo boxed" id="topLogo">Tech Gurus</h1>	
+		<nav>
+			<ul>
+				<li><a href="#services">Repairs</a></li>
+				<li class="cta boxed"><a href="javascript:;">Schedule an appointment</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+		<div id="top">
+			<p id="img-text">We fix your electronics to help you stay connected and reach your goals</p>
+		</div>
+		<div class="cta boxed"><a href="javascript:;">Schedule an appointment</a></div>
+		</section>
+		
+		<section>
+		<div id="middle">
+			<p>Whether you're at home, the office or on a college campus, we come to you to fix your device.</p>
+		</div>
+		<div class="cta boxed"><a href="javascript:;">Schedule an appointment</a></div>
+		</section>
+		
+		<div id="services"></div>
+		
+		<section>
+		<div id="bottom">
+			<h2>Popular Repairs</h2>
+			<div class="boxed" id="info">
+				<div id="phones">
+				<h3>Phones</h3>
+					<ul>
+						<li>Broken screen</li>
+						<li>Charging issues</li>
+						<li>No sound</li>
+					</ul>
+				</div>
+				<div id="laptops">
+				<h3>Laptops</h3>
+					<ul>
+						<li>Slow performance</li>
+						<li>Broken screen</li>
+						<li>Keyboard replacement</li>
+					</ul>
+				</div>
+			</div>
+			<p>We also repair tablets (including iPads), game consoles, desktop computers and just about anything that has a power button!</p>
+		</div>
+		<div class="cta boxed"><a href="javascript:;">Schedule an appointment</a></div>
+		</section>
+	</main>
+	<footer>
+		<h1 class="logo boxed" id="bottomLogo">Tech Gurus</h1>
+		<p><a href="#services">Repairs</a> &vert; <a href="tel:248-518-0818">248-518-0818</a></p>
+	</footer>
+	<div id="modal" class="modal">
+		<div class="modalContent">
+		<span class="close">&times;</span>
+			<p id="mtitle">Call or Text:</p>
+				<p><a href="tel:248-518-0818" id="phone">248-518-0818</a></p>
+		</div>
+	</div>
+
+	<script>
+	var modal = document.getElementById('modal');
+	var btn = document.querySelectorAll('.cta.boxed');
+	var close = document.getElementsByClassName("close")[0];
+
+	[].forEach.call(btn, function(el) {
+		el.onclick = function() {
+			modal.style.display = "block";
+		}
+	})
+	close.onclick = function() {
+		modal.style.display = "none";
+	}
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+	</script>
+</body>
+</html>
