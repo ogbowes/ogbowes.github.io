@@ -61,7 +61,7 @@ h1 {
 }
 
 .boxed {
-	border: 5px solid #33363b;
+	border: 0.25rem solid #33363b;
 	padding: 0 0.5rem;
 }
 
