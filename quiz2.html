@@ -7,88 +7,134 @@
 	<link rel="stylesheet" href="quizStyles.css">
 </head>
 <body>
-<div id="quiz">
-	<div id="quizContainer">
-	<span id="step1">
-	<div class="step">
+	<ul class="flexOuter">
+<div class="stepContainer">
+		<span id="step1">
+		<div class="step">
 		<h2 class="question">What are you looking to do?<br>(Check all that apply)</h2>
-		<p class="options">
-			<input type="checkbox" id="lines" name="lines">
-			<label for="lines">Find my lines</label><br>
-			<input type="checkbox" id="fence" name="fence">
-			<label for="fence">Put up a fence</label><br>
-			<input type="checkbox" id="house" name="house">
-			<label for="house">Build a house</label><br>
-			<input type="checkbox" id="split" name="split">
-			<label for="split">Split a lot</label><br>
-			<input type="checkbox" id="other" name="other">
-			<label for="other">Other</label><br>
-		</p>
-		<button id="step1Button">Next</button>
+		<ul class="flexInner">
+			<li>
+				<input type="checkbox" id="lines" name="lines">
+				<label for="lines">Find my lines</label>
+			</li>
+			<li>
+				<input type="checkbox" id="fence" name="fence">
+				<label for="fence">Put up a fence</label>
+			</li>
+			<li>
+				<input type="checkbox" id="house" name="house">
+				<label for="house">Build a house</label>
+			</li>
+			<li>	
+				<input type="checkbox" id="split" name="split">
+				<label for="split">Split a lot</label>
+			</li>
+			<li>
+				<input type="checkbox" id="other" name="other">
+				<label for="other">Other</label>
+			</li>
+			<li>
+				<button id="step1Button">Next</button>
+			</li>
+		</ul>
 	</div></span>
-	<span id="step2">
+<!-- 	</div>
+<div class="stepContainer"> -->
+<span id="step2">
 	<div class="step">
 		<h2 class="question">Do you live in Waterford?</h2>
-		<p class="options">
-			<input type="radio" id="waterfordYes" name="waterford">
-			<label for="waterfordYes">Yes</label><br>
-			<input type="radio" id="waterfordNo" name="waterford">
-			<label for="waterfordNo">No</label><br>
-		</p>
-		<button id="step2Button">Next</button>
+		<ul class="flexInner">
+			<li>
+				<input type="radio" id="waterfordYes" name="waterford">
+				<label for="waterfordYes">Yes</label>
+			</li>
+			<li>
+				<input type="radio" id="waterfordNo" name="waterford">
+				<label for="waterfordNo">No</label>
+			</li>
+			<li>
+				<button id="step2Button">Next</button>
+			</li>
+		</ul>
 	</div></span>
-	<span id="step3">
+<!-- 	</div>
+<div class="stepContainer"> -->
+<span id="step3">
 	<div class="step">
 		<h2 class="question">Do you live on water?</h2>
-		<p class="options">
-			<input type="radio" id="lakeYes" name="lake">
-			<label for="lakeYes">Yes</label><br>
-			<input type="radio" id="lakeNo" name="lake">
-			<label for="lakeNo">No</label><br>
-		</p>
-		<button id="step3Button">Next</button>
+		<ul class="flexInner">
+			<li>
+				<input type="radio" id="lakeYes" name="lake">
+				<label for="lakeYes">Yes</label>
+			</li>
+			<li>
+				<input type="radio" id="lakeNo" name="lake">
+				<label for="lakeNo">No</label>
+			</li>
+			<li>
+				<button id="step3Button">Next</button>
+			</li>
+		</ul>
 	</div></span>
+<!-- 	</div>
+<div class="stepContainer"> -->
 	<span id="step4">
 	<div class="step">
 		<h2 class="question">Has your township mentioned needing a topographic survey or elevations?</h2>
-		<p class="options">
-			<input type="radio" id="topoYes" name="topo">
-			<label for="topoYes">Yes</label><br>
-			<input type="radio" id="topoNo" name="topo">
-			<label for="topoNo">No</label><br>
-			<input type="radio" id="idk" name="topo">
-			<label for="idk">I Don't Know</label><br>
-		</p>
-		<button id="step4Button">Next</button>
+		<ul class="flexInner">
+			<li>
+				<input type="radio" id="topoYes" name="topo">
+				<label for="topoYes">Yes</label>
+			</li>
+			<li>	
+				<input type="radio" id="topoNo" name="topo">
+				<label for="topoNo">No</label>
+			</li>
+			<li>
+				<input type="radio" id="idk" name="topo">
+				<label for="idk">I Don't Know</label>
+			</li>
+			<li>
+				<button id="step4Button">Next</button>
+			</li>
+		</ul>
 	</div></span>
-	<span id="step5">
+<!-- 	</div>
+<div class="stepContainer"> -->
+<span id="step5">
 	<div class="step">
 		<h2 class="question">You probably need a:</h2><h1>Boundary Survey</h1>
 		<img src="images/Boundary.png" alt="Representation of a boundary survey">
 		<p class="desc">A boundary survey will locate your corners and show you where your lines are. These are perfect if you want to know where your lines are or if you want to put up a fence. Contact us today to get an estimate!</p><br>
 		<div class="cta"><a href="contact.html">Get an Estimate</a></div><br>
-	</div></span>
-	<span id="step6">
+</div></span>
+<!-- 	</div>
+<div class="stepContainer"> -->
+<span id="step6">
 	<div class="step">
 		<h2 class="question">You probably need a:</h2><h1>Topographic Survey</h1>
 		<img src="images/Topo.png" alt="Representation of a topographic survey">
 		<p class="desc">A topographic survey will locate your corners, show you where your lines are, locate any buildings on your property and 500 feet off on both sides, and show elevations. These are required in most cities and townships if you want to build a house or put up most structures. Contact us today to get an estimate!</p><br>
 		<div class="cta"><a href="contact.html">Get an Estimate</a></div><br>
-	</div></span>
-	<span id="step7">
+</div></span>
+<!-- 	</div>
+<div class="stepContainer"> -->
+<span id="step7">
 	<div class="step">
 		<h2 class="question">We advise that you ask your township or give us a call to help determine what you need.</h2>
 		<div class="cta"><a href="contact.html">Contact Us</a></div><br>
-	</div></span>
-	<span id="step8">
+</div></span>
+<!-- 	</div>
+<div class="stepContainer"> -->
+<span id="step8">
 	<div class="step">
 		<h2 class="question">You need a:</h2><h1>Lot Split/Lot Combination Survey</h1>
 		<img src="" alt="Representation of a lot split survey">
 		<p class="desc">A lot split/combination survey will locate your current corners, set new ones for where the property is going to be split or combined, and have new descriptions written to be recorded. These are similar to boundary surveys but have all of the required information to have your property legally split or combined. Contact us today to get an estimate!</p><br>
 		<div class="cta"><a href="contact.html">Get an Estimate</a></div><br>
-	</div></span>
+</div></span>
 	</div>
-</div>
+	</ul>
 	<script src="quiz.js"></script>
 </body>
 </html>
