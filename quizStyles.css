@@ -1,153 +1,65 @@
-/*body {
-	margin: 0;
+body {
 	padding: 0;
-}*/
-
-/* #quiz {
-	width: 50vw;
-	height: 100vh;
-	overflow: hidden;
-	margin: auto auto;
-}
-
-#quizContainer {
-	width: 50%;
-	height: 100%;
-	margin: 0 auto;
-}
-
-.step {
-	width: 100%;
-	height: 100%;
-}*/
-
-/* this works better:*/
-/*#quiz {
-	overflow: hidden;
-	height: 100vh;
-	width: 25vw;
-	margin: 0 auto;
-}
-
-#quizContainer {
-	width: 100vw;
-}
-
-.step {
-	float: left;
-	height: 100vh;
-	width: 25vw;
-}*/
-
-/*#quiz {
-  overflow: hidden;
-  height: 100vh;
-  width: 26.67rem;
-  margin: 0 auto;
-}
-
-#quizContainer {
-  width: 213.36rem;
-}
-
-.step {
-  float: left;
-  max-height: 100vh;
-  width: 26.67rem;
-}*/
-
-/*#quiz {
-
-}
-
-#quizContainer {
-
-}
-
-.step {
-	width: 100vw
-	height: max-content;
-}*/
-
-/*.options {
-	box-sizing: border-box;
-	display: inline-flex;
-	flex-direction: column;
-	width: 100%;
-	padding-left: 43%;
-	border: 1px solid black;
-}
-
-img {
-	width: 50%;
-	margin: 10px 25%;
-}
-
-button {
-	width: 50%;
-	margin: 0 25%;
-}
-
-.question {
-	font-size: 1.25em;
-	margin-top: 20px;
-	margin-bottom: 0;
-	text-align: center;
-}
-
-h1 {
-	font-size: 2em;
-	text-align: center;
 	margin: 0;
-}
-
-.desc {
-	width: 90%;
-	margin: 0 auto;
-}
-
-.cta {
-	width: 100%;
-	height: 5%;
-	text-decoration: none;
-	text-align: center;
-}
-
-a {
-	margin-top: 25%;
-}
-
-.visible {
-	visibility: visible;
-} */
-
-/*Flex styles (best):*/
-
-.flexOuter {
-	padding: 0;
-}
-
-.flexOuter li, .flexInner {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.flexInner {
-	flex-flow: column nowrap;
-	align-self: flex-start;
 }
 
 .stepContainer {
+/*	border: 1px solid blue;*/
 	display: flex;
 	flex-flow: row nowrap;
 	overflow: hidden;
 }
 
 .step {
+/*	border: 1px solid black;*/
 	width: 100vw;
-	overflow: hidden;
+	height: 100vh;
+
+/* Rules for step as parent of elements inside of step */
+
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style-type: none;
+	padding: 1em;
 }
 
 h1, h2 {
 	text-align: center;
+	margin: 0;
+}
+
+label {
+	margin-left: 0.25em;
+}
+
+.step button {
+	margin-left: 20%;
+}
+
+.step img {
+	max-height: 45%;
+	padding: 1em 0 0.5em 0;
+}
+
+.step .desc {
+	width: 80%;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.step .question {
+	margin-top: 1em;
+}
+
+a {
+	text-decoration: none;
 }
