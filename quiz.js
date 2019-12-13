@@ -17,12 +17,16 @@ function step1() {
 	
 	if (lines.checked || fence.checked) {
 		window.location.href = "quiz.html#step5";
+		hide();
 	} if (house.checked) {
 		window.location.href = "quiz.html#step2";
+		hide();
 	} else if (split.checked) {
 		window.location.href = "quiz.html#step8";
+		hide();
 	} else if (other.checked) {
 		window.location.href = "quiz.html#step4";
+		hide();
 	}
 }
 
@@ -32,8 +36,10 @@ function step2() {
 
 	if (waterfordY.checked) {
 		window.location.href = "quiz.html#step3";
+		hide();
 	} else if (waterfordN.checked) {
 		window.location.href = "quiz.html#step4";
+		hide();
 	}
 }
 
@@ -43,8 +49,10 @@ function step3() {
 
 	if (lakeY.checked) {
 		window.location.href = "quiz.html#step6";
+		hide();
 	} else if (lakeN.checked) {
 		window.location.href = "quiz.html#step5";
+		hide();
 	}
 }
 
@@ -55,9 +63,37 @@ function step4() {
 
 	if (topoY.checked) {
 		window.location.href = "quiz.html#step6";
+		hide();
 	} else if (topoN.checked) {
 		window.location.href = "quiz.html#step5";
+		hide();
 	} else if (topoI.checked) {
 		window.location.href = "quiz.html#step7";
+		hide();
 	}
 }
+
+// Loops through all the span elements, checks its ID with the current step from the URL and shows the current step but hides the rest by attaching the "hide" class.
+
+function hide() {
+	let span = document.querySelectorAll("span");
+
+	for (var i = 0; i < span.length; i++) {
+		
+		let current = window.location.href.slice(-5);
+		
+		if (span[i].id == current) {
+			span[i].classList.remove("hide");
+		} else {
+				span[i].classList.add("hide");
+		}
+	}
+}
+
+
+// Resets the URL if the page is reloaded. Just ensures that nothing but the first question will display
+
+if (performance.navigation.type == 1) {
+	window.location.href = "quiz.html";
+}
+
