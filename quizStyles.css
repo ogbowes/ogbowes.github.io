@@ -67,3 +67,41 @@ a {
 .hide {
 	display: none;
 }
+
+@media screen and (max-height: 380px) {
+	h1, h2 {
+		flex-basis: 100vw;
+	}
+
+	ul {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	li {
+		flex-basis: 10vw;
+	}
+
+	#step1 li {
+		flex-basis: 25vw;
+	}
+
+	.step {
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	.step .desc {
+		width: 50vw;
+		margin-left: 2em;
+	}
+
+	.step .cta {
+		flex-basis: 100vw;
+	}
+
+	.step .cta a {
+		text-align: center;
+	}
+}

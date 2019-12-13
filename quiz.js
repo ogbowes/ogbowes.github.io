@@ -96,4 +96,3 @@ function hide() {
 if (performance.navigation.type == 1) {
 	window.location.href = "quiz.html";
 }
-
