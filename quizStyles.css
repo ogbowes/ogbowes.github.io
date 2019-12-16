@@ -22,19 +22,27 @@ body {
 	align-items: center;
 }
 
-ul {
+h1, h2 {
+	text-align: center;
+	margin: 0;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+.step .question {
+	margin: 1.5em 0;
+}
+
+.step ul {
+	list-style-type: none;
 	padding: 0;
 	margin: 0;
 }
 
-li {
-	list-style-type: none;
-	padding: 1em;
-}
-
-h1, h2 {
-	text-align: center;
-	margin: 0;
+.step li {
+	padding-bottom: 2em;
 }
 
 label {
@@ -42,36 +50,30 @@ label {
 }
 
 .step button {
-	margin-left: 20%;
+	margin-top: 1.5em;
 }
 
 .step img {
-	max-height: 45%;
-	padding: 1em 0 0.5em 0;
+	max-height: 35%;
 }
 
 .step .desc {
 	width: 80%;
 	text-align: center;
-/*	margin-bottom: 0;*/
-}
-
-.step .question {
-	margin-top: 1em;
-}
-
-a {
-/*	display: inline-block;
-	text-decoration: none;
-	margin-top: 1em;
-	padding: 1em 2em;
-	border: 1px solid black;
-	border-radius: 30px;*/
-
+	margin: 1.5em 0;
 }
 
 .step .cta {
-/*	padding-top: 1em;*/
+	margin-top: 0.75em;
+}
+
+a {
+	text-decoration: none;
+	border: 1px solid black;
+	border-radius: 3em;
+	padding: 0.75em 2em;
+	background-color: black;
+	color: white;
 }
 
 .hide {
@@ -81,8 +83,8 @@ a {
 /* Landscape styles */
 
 @media screen and (max-height: 450px) {
-	h1, h2 {
-		flex-basis: 100vw;
+	.step .question {
+		margin-bottom: 1.5em;
 	}
 
 	ul {
@@ -91,34 +93,7 @@ a {
 		justify-content: center;
 	}
 
-	li {
-		flex-basis: 10vw;
-	}
-
 	#step1 li {
 		flex-basis: 25vw;
-	}
-
-	.step {
-		flex-flow: row wrap;
-		justify-content: center;
-	}
-
-	.step .desc {
-		width: 50vw;
-		margin-left: 2em;
-		padding-bottom: 1.75em;
-		align-self: flex-start;
-	}
-
-	.step .cta {
-/*		margin: -2em 0 2em 25vw;*/
-/*		align-self: flex-start;*/
-		margin-left: 25vw;
-		margin-bottom: 2em;
-	}
-
-	.step .cta a {
-/*		flex-basis: 30vw;*/
 	}
 }
