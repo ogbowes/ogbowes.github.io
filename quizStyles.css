@@ -82,9 +82,15 @@ a {
 
 /* Landscape styles */
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 411px) {
+	.step {
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
 	.step .question {
-		margin-bottom: 1.5em;
+		flex-basis: 100vw;
+		margin: 0;
 	}
 
 	ul {
@@ -93,7 +99,23 @@ a {
 		justify-content: center;
 	}
 
-	#step1 li {
-		flex-basis: 25vw;
+	.step li {
+		padding: 1.25em 0.5em 1.25em 0.5em;
+		flex-basis: 25%;
+	}
+
+	.step button, .step .cta {
+		flex-basis: 80vw;
+		margin: 0 auto;
+		margin: 0 0 1.5em 0;
+	}
+
+	.step .desc {
+		width: 50%;
+	}
+
+	.step a {
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
