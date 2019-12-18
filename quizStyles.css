@@ -18,7 +18,8 @@ body {
 /* Rules for step as parent of elements inside of step */
 
 	display: flex;
-	flex-flow: column nowrap;
+	flex-flow: row wrap;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -27,18 +28,16 @@ h1, h2 {
 	margin: 0;
 }
 
-h1 {
-	font-size: 2rem;
-}
-
 .step .question {
-	margin: 1.5em 0;
+	align-self: flex-start;
+	margin-top: 10%;
+	flex-basis: 100%;
 }
 
 .step ul {
 	list-style-type: none;
 	padding: 0;
-	margin: 0;
+	margin: 0 25%;
 }
 
 .step li {
@@ -50,21 +49,25 @@ label {
 }
 
 .step button {
-	margin-top: 1.5em;
+	flex-basis: 80%;
+	margin-bottom: 5%;
+	height: 8%;
+	align-self: flex-end;
 }
 
 .step img {
-	max-height: 35%;
+	margin-top: -1em;
+	height: 35%;
 }
 
 .step .desc {
+	margin: -1em 0 0 0;
 	width: 80%;
 	text-align: center;
-	margin: 1.5em 0;
 }
 
 .step .cta {
-	margin-top: 0.75em;
+	margin-bottom: 2em;
 }
 
 a {
@@ -83,39 +86,52 @@ a {
 /* Landscape styles */
 
 @media screen and (max-height: 411px) {
-	.step {
+/*	.step {
 		flex-flow: row wrap;
 		justify-content: center;
-	}
+	}*/
 
 	.step .question {
-		flex-basis: 100vw;
-		margin: 0;
+		margin: 1em;
 	}
 
 	ul {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center;
+		flex-basis: 100vw;
 	}
 
 	.step li {
-		padding: 1.25em 0.5em 1.25em 0.5em;
-		flex-basis: 25%;
+		padding: 2em;
 	}
 
-	.step button, .step .cta {
-		flex-basis: 80vw;
-		margin: 0 auto;
+	.step button {
 		margin: 0 0 1.5em 0;
 	}
 
 	.step .desc {
 		width: 50%;
+		padding-left: 1em;
+		margin: 0;
 	}
 
-	.step a {
-		margin-left: auto;
-		margin-right: auto;
+	.step .cta {
+		flex-basis: 100vw;
+		display: flex;
+		justify-content: center;
+		margin: 0 0 1em 0;
+	}
+
+	#step1 ul {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: flex-start;
+		align-content: center;
+		height: 50%;
+	}
+
+	#step1 li {
+		padding: 1.5em;
 	}
 }
