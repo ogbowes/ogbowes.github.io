@@ -82,6 +82,10 @@ li {
 	display: none;
 }
 
+#step4 ul {
+	padding-left: 2em;
+}
+
 /* Landscape Styles */
 
 @media screen and (max-height: 420px) {
