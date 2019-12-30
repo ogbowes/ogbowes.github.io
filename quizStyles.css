@@ -4,14 +4,12 @@ body {
 }
 
 .stepContainer {
-	box-sizing: border-box;
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
 }
 
 .step {
-	box-sizing: border-box;
 	width: 100%;
 	height: 100%;
 
@@ -28,7 +26,7 @@ h1, h2 {
 }
 
 .question {
-	margin-top: 1em;
+	margin-top: 5%;
 }
 
 .step ul {
@@ -45,42 +43,27 @@ li {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	height: 70%;
 	width: 80%;
-	height: 73%;
-	flex-grow: 1.5;
-}
-/*.type > * {
 	margin: auto;
-}*/
+}
 
 .type img {
-/*	height: 58%;
+	object-fit: scale-down;
+	overflow: hidden;
 	max-width: 100%;
-	flex-grow: 1.5;
-	margin: auto;*/
-}
-
-.type div img {
-	width: 100%;
-}
-
-.step button {
-	margin-top: auto;
+	max-height: 100%;
 	margin-bottom: 1em;
-	width: 80%;
-	height: 2em;
 }
 
-.step .desc {
+.type .desc {
 	text-align: center;
-	margin-top: 0;
-/*	border: 2px solid black;*/
-	padding: 5px;
+	margin: auto;
 }
 
 .cta {
-	margin-top: auto;
-	margin-bottom: 1em;
+	margin: auto;
+	margin-bottom: 5%;
 	text-decoration: none;
 	border: 1px solid black;
 	border-radius: 3em;
@@ -89,13 +72,19 @@ li {
 	color: white;
 }
 
+.step button {
+	margin-bottom: 5%;
+	width: 80%;
+	height: 2em;
+}
+
 .hide {
 	display: none;
 }
 
 /* Landscape Styles */
 
-@media screen and (max-height: 411px) {
+@media screen and (max-height: 420px) {
 	#step1 ul {
 		display: flex;
 		flex-flow: row wrap;
@@ -108,7 +97,7 @@ li {
 	}
 
 	.type img {
-		height: 100%;
+		width: 100%;
 	}
 
 	.type .desc {
