@@ -83,7 +83,18 @@ li {
 }
 
 #step4 ul {
-	padding-left: 5em;
+	padding-left: 3.5em;
+}
+
+#step7 .question {
+	width: 80%;
+	margin-top: 50%;
+	margin-bottom: 3em;
+}
+
+#step7 .cta {
+	margin: unset;
+	margin-bottom: auto;
 }
 
 /* Landscape Styles */
