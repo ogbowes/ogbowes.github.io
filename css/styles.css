@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
-
-* {
-	margin: 0;
-	padding: 0;
-}
+@import url('https://fonts.googleapis.com/css?family=Oswald|Material+Icons');
 
 body {
+	margin: 0;
 	display: flex;
 	flex-flow: column wrap;
 }
@@ -15,21 +11,22 @@ nav {
 	padding: 1vw;
 	position: fixed;
 	width: 100%;
+	height: 80px;
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
-	color: white;
+	color: #F2F2F2;
 	font-family: 'Oswald';
 	background: linear-gradient(
 		rgba(0, 0, 0, 0.3), 
 		rgba(0, 0, 0, 0.3));
-	backdrop-filter: blur(3px)
+	backdrop-filter: blur(10px);
+	z-index: 2;
 }
 
 nav h1 {
 	margin-left: 0.25em;
 	line-height: 0;
-	margin-top: -8px;
 }
 
 nav a {
@@ -39,26 +36,45 @@ nav a {
 	max-width: 30%;
 }
 
-a {
+.cta {
 	text-decoration: none;
 	font-family: 'Oswald';
-	color: black;
+	color: #0D0D0D;
 	padding: 10px;
 	background-color: white;
 
+}
+
+hr {
+	width: 97%;
+	border: none;
+	height: 1px;
+	background-color: #0D0D0D;
+	margin-top: 0.33em;
+}
+
+section {
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
 }
 
 .img-container {
 	height: 100vh;
 	width: 100%;
 	overflow: hidden;
+	background-size: cover;
+}
+
+#home {
+	height: 100vh;
 	background: 
     linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
     url(../images/suburbs.jpg);
-  background-size: cover;
 }
 
 .img-text {
@@ -71,11 +87,57 @@ a {
 	font-size: 10vmin;
 	line-height: 1.5em;
 	width: 80%;
+	z-index: 1;
 }
 
 .img-text a {
 	line-height: 3.5em;
 	font-size: 0.5em;
+}
+
+#surveys {
+	background-color: #F2F2F2;
+	color: #0D0D0D;
+}
+
+#surveys h1 {
+	margin: 1em auto 0 0.25em;
+}
+
+#surveys h2, p {
+	text-align: center;
+}
+
+#surveys a {
+	font-weight: bold;
+	text-decoration: none;
+	color: inherit;
+}
+
+#surveys .cta {
+	font-weight: normal;
+	background-color: #0D0D0D;
+	color: #F2F2F2;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+ul {
+	columns: 2;
+	list-style-type: none;
+}
+
+li::before {
+	font-family: 'Material Icons';
+	content: '\e86c';
+	margin-right: 0.5em;
+	color: inherit;
+}
+
+li {
+	text-align: left;
+	margin-right: 1em;
+	margin-bottom: 1em;
 }
 
 @media screen and (min-width: 800px) {
@@ -88,10 +150,11 @@ a {
 	}
 
 	.img-text {
-		font-size: 4em;
+		font-size: 2.5em;
 	}
 
 	.img-text a {
-		font-size: 1.5rem;
+		line-height: 1em;
+		font-size: 1.25rem;
 	}
 }
