@@ -91,6 +91,7 @@ section {
 #surveys {
 	background-color: #F2F2F2;
 	color: #0D0D0D;
+	height: calc(100vh - 80px);
 }
 
 #surveys > * {
