@@ -42,21 +42,14 @@ nav a {
 	color: #0D0D0D;
 	padding: 10px;
 	background-color: white;
+	border-radius: 5px;
 
-}
-
-hr {
-	width: 97%;
-	border: none;
-	height: 1px;
-	background-color: #0D0D0D;
-	margin-top: 0.33em;
 }
 
 section {
 	width: 100%;
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: column nowrap;
 	align-items: center;
 }
 
@@ -100,17 +93,36 @@ section {
 	color: #0D0D0D;
 }
 
-#surveys h1 {
-	margin: 1em auto 0 0.25em;
+#surveys > * {
+	line-height: 1.5em;
 }
 
-#surveys h2, p {
+#surveys h1 {
+	border-top: 2px solid #0D0D0D;
+	border-bottom: 2px solid #0D0D0D;
+/*	border-radius: 8px;*/
+	padding: 0.25em 0.75em;
+	margin-top: 1em;
+	margin-bottom: 0;
+}
+
+#surveys h2, #surveys p {
+	width: 90%;
 	text-align: center;
+}
+
+#surveys h2 {
+	margin: 1.5em 0;
+}
+
+#surveys p {
+	margin-top: 2em;
+	margin-bottom: 1.5em;
 }
 
 #surveys a {
 	font-weight: bold;
-	text-decoration: none;
+	text-decoration-color: inherit;
 	color: inherit;
 }
 
@@ -119,12 +131,16 @@ section {
 	background-color: #0D0D0D;
 	color: #F2F2F2;
 	margin-top: 1em;
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 }
 
 ul {
 	columns: 2;
 	list-style-type: none;
+	border: 2px solid #0D0D0D;
+	border-radius: 8px;
+	padding: 1em 2em;
+	margin: 0;
 }
 
 li::before {
@@ -136,8 +152,7 @@ li::before {
 
 li {
 	text-align: left;
-	margin-right: 1em;
-	margin-bottom: 1em;
+	line-height: 3em;
 }
 
 @media screen and (min-width: 800px) {
