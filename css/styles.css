@@ -115,10 +115,9 @@ section {
 
 #surveys > * {
 	line-height: 1.75em;
-	font-family: 'Oswald';
 }
 
-#surveys p, #surveys li, #surveys .cta {
+#surveys p, #surveys li {
 	font-size: 1.15em;
 }
 
@@ -140,6 +139,7 @@ section {
 	text-decoration-color: inherit;
 	color: inherit;
 }
+
 
 #surveys .cta {
 	background-color: #0D0D0D;
@@ -188,8 +188,9 @@ ul li:nth-child(n + 3) {
 
 #process ol {
 	box-sizing: border-box;
-	margin: 2em 0;
-	width: 90%;
+	margin: 0.75em auto 1.5em auto;
+	max-width: 100%;
+	font-size: 1.25em;
 }
 
 #process ol li {
@@ -197,7 +198,7 @@ ul li:nth-child(n + 3) {
 }
 
 #process .cta {
-	margin-bottom: 1.5em;
+	margin-bottom: 2em;
 }
 
 @media screen and (min-width: 800px) {
@@ -218,8 +219,14 @@ ul li:nth-child(n + 3) {
 		font-size: 1.6rem;
 	}
 
-	#surveys p, #surveys li, #surveys .cta {
-	font-size: 1.3em;
+	.cta {
+		font-size: 1.3rem;
+		padding: 0.75rem;
+	}
+
+	.sectionTitle {
+		border-top: none;
+		width: max-content;
 	}
 }
 
