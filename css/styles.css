@@ -86,6 +86,10 @@ section {
     url(../images/suburbs.jpg);
 }
 
+#intro, #neighbors {
+	position: relative;
+}
+
 .img-text {
 	position: absolute;
 	top: 50%;
