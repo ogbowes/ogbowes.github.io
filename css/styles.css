@@ -31,31 +31,44 @@ nav {
 }
 
 nav h1 {
-	margin-left: 0.25em;
+	margin-left: 8px;
 	line-height: 0;
 }
 
-nav a {
-	margin-left: auto;
-	flex-grow: 2;
+nav .cta {
+	margin: 0 8px 0 auto;
+	flex-grow: 1;
 	text-align: center;
 	max-width: 30%;
+	font-size: 1em;
 }
 
 .cta {
 	text-decoration: none;
 	font-family: 'Oswald';
-	color: #0D0D0D;
 	padding: 10px;
-	background-color: #F2F2F2;
 	border-radius: 5px;
+	margin-bottom: 2em;
+	font-size: 1.33rem;
+}
+
+.light {
+	background-color: #F2F2F2;
+	color: #0D0D0D;
+}
+
+.dark {
+	background-color: #0D0D0D;
+	color: #F2F2F2;
 }
 
 section {
 	width: 100%;
+	min-height: calc(100vh - 80px);
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
+	justify-content: center;
 }
 
 .sectionTitle {
@@ -83,7 +96,7 @@ section {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(../images/suburbs.jpg);
+    url(../images/neighborhood.jpg);
 }
 
 #intro, #neighbors {
@@ -103,19 +116,16 @@ section {
 	z-index: 1;
 }
 
-.img-text a {
-	line-height: 3.5em;
-	font-size: 0.5em;
+.img-text .cta {
+	font-size: 0.6em;
+}
+
+.img-text p {
+	margin-bottom: 0.5em;
 }
 
 
 /* Surveys section */
-
-
-#surveys {
-	background-color: #F2F2F2;
-	color: #0D0D0D;
-}
 
 #surveys > * {
 	line-height: 1.75em;
@@ -138,17 +148,9 @@ section {
 	margin: 2.5em 0;
 }
 
-#surveys a {
+#surveys p a {
 	font-weight: 500;
-	text-decoration-color: inherit;
 	color: inherit;
-}
-
-
-#surveys .cta {
-	background-color: #0D0D0D;
-	color: #F2F2F2;
-	margin-bottom: 2em;
 }
 
 ul {
@@ -178,13 +180,19 @@ ul li:nth-child(n + 3) {
 	padding-left: 1em;
 }
 
+#neighbor-img {
+	height: 100vh;
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/friends.jpg);
+    background-position: 75% 15%;
+}
+
 
 /* Process Section */
-
-#process {
-	background-color: #0D0D0D;
-	color: #F2F2F2;
-}
 
 #process .sectionTitle {
 	border-color: #F2F2F2;
@@ -201,8 +209,18 @@ ul li:nth-child(n + 3) {
 	padding-left: 0.25em;
 }
 
-#process .cta {
-	margin-bottom: 2em;
+/* About section */
+
+#about-content {
+	width: 90%;
+	margin: 0.5em 0 3em 0;
+	align-self: center;
+	line-height: 2em;
+}
+
+#map {
+	margin-top: 1.5em;
+	height: 400px;
 }
 
 @media screen and (min-width: 800px) {
@@ -236,6 +254,6 @@ ul li:nth-child(n + 3) {
 
 @media screen and (min-height: 720px) and (max-height: 820px) {
 	#surveys {
-		height: calc(100vh - 80px) ;
+		height: calc(100vh - 80px);
 	}
 }
