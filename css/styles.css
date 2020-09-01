@@ -86,7 +86,6 @@ section {
 	height: 100vh;
 	width: 100%;
 	overflow: hidden;
-	background-size: cover;
 }
 
 #home {
@@ -97,6 +96,7 @@ section {
       rgba(0, 0, 0, 0.5)
     ),
     url(../images/neighborhood.jpg);
+    background-size: cover;
 }
 
 #intro, #neighbors {
@@ -184,13 +184,14 @@ ul li:nth-child(n + 3) {
 	height: 100vh;
 	background: 
     linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ),
     url(../images/friends.jpg);
-    background-position: 75% 15%;
+    background-size: cover;
+    background-position: 70%;
+    background-repeat: no-repeat;
 }
-
 
 /* Process Section */
 
@@ -228,8 +229,8 @@ ul li:nth-child(n + 3) {
 		font-size: 1.25em;
 	}
 
-	nav a {
-		max-width: 12.5em;
+	nav .cta {
+		max-width: 17.1875rem;
 	}
 
 	.img-text {
