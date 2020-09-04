@@ -55,19 +55,22 @@ nav .cta {
 }
 
 .phoneInfo, .emailInfo {
-	padding: 10px 20px;
+	background-color: inherit;
+	padding: 10px;
 }
 
 .phoneInfo::before {
-	display: inline-block;
 	font-family: 'Material Icons';
 	content: '\e0cd';
+	position: relative;
+	top: 3px;
 }
 
 .emailInfo::before {
-	display: inline-block;
 	font-family: 'Material Icons';
 	content: '\e0be';
+	position: relative;
+	top: 3px;
 }
 
 .light {
@@ -136,12 +139,12 @@ section {
 
 .img-text .cta {
 	font-size: 0.6em;
+	line-height: 0;
 }
 
 .img-text p {
 	margin-bottom: 0.5em;
 }
-
 
 /* Surveys section */
 
@@ -267,11 +270,5 @@ ul li:nth-child(n + 3) {
 	.sectionTitle {
 		border-top: none;
 		width: max-content;
-	}
-}
-
-@media screen and (min-height: 720px) and (max-height: 820px) {
-	#surveys {
-		height: calc(100vh - 80px);
 	}
 }
