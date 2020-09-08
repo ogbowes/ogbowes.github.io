@@ -41,7 +41,7 @@ for (let i = 0; i < cta.length; i++) {
 		previousCta = cta[i];
 
 		// Timeout to prevent links being clicked when CTA is initially tapped on mobile
-		setTimeout(() => displayContactInfo(e), 100);
+		setTimeout(() => displayContactInfo(e), 250);
 		setTimeout(() => revertText(e.srcElement), 10000);
 	})
 }
